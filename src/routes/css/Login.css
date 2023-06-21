@@ -1,0 +1,259 @@
+@font-face {
+
+    font-family: minhaFonte;
+    src: url(../lt_energy/LT\ Energy\ Bold.ttf);
+
+}
+
+* {
+
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+
+}
+
+body {
+
+    font-family: minhaFonte;
+    position: relative;
+    background-image: linear-gradient(#23053C, #5A00A4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.main-login{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.login {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.form-Login {
+
+    height: 30rem;
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #321D79;
+    border-radius: 30px;
+    padding: 5rem;
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.4);
+    gap: 5px;
+
+}
+
+.form-Login h1 {
+
+    text-align: center;
+    color: #FF8A00;
+    font-weight: 500;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+
+}
+
+.form-Login .input-login {
+
+    padding: 15px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    border-radius: 10px;
+    transition: all linear 160ms;
+    height: 2.5rem;
+    width: 80%;
+
+}
+
+.form-Login .label-login {
+
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+    margin-right: 16rem;
+
+}
+
+.form-Login input::-webkit-input-placeholder {
+
+    font-size: 1.2rem;
+
+}
+
+.form-Login a {
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 13px;
+    color: #fff;
+    transition: all linear 160ms;
+    text-decoration: none;
+    align-self: flex-end;
+
+}
+
+.form-Login .btn-login {
+
+    background-color: #FF8A00;
+    width: 50%;
+    color: #fff;
+    font-size: .5rem;
+    font-weight: 600;
+    transition: all linear 160ms;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 2rem;
+    margin-bottom: .6rem;
+
+    &:hover{
+
+        transform: scale(1.05);
+        background-color: #FF8A00;
+        transition: .6s;
+
+    }
+
+}
+
+
+
+.form-Login .links-login {
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.form-Login .links-login h5 {
+
+    font-size: 1.2rem;
+    color: #fff;
+    text-decoration: none;
+
+}
+
+.form-Login .links-login span {
+
+    color: #FF8A00;
+    font-size: 1.2rem;
+
+}
+
+.form-Login .links-login a:nth-child(2) {
+
+    color: #FF8A00;
+
+}
+
+.form-Login .icones {
+
+    margin-top: 1rem;
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.form-Login .icones img {
+    width: 3rem;
+
+    &:hover{
+
+        transform: scale(1.2);
+        transition: .6s;
+
+    }
+
+}
+
+.txtlinha {
+
+    background-color: #fff;
+    width: 13rem;
+    height: 2rem;
+    padding-inline: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: thin;
+    position: relative;
+    z-index: 1;
+
+}
+
+.txtlinha hr {
+
+    width: 25rem;
+    position: absolute;
+    z-index: -1;
+
+}
+
+.form-Login .pai {
+
+    width: 347px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.direitaembaixo {
+
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    height: 25rem;
+
+}
+
+.esquerda_embaixo {
+
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    height: 9rem;
+
+}
+
+.direita_emcima {
+
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    height: 9rem;
+
+}
+
+.esquerda_emcima {
+
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    height: 25rem;
+
+}
+
+.planetas {
+
+    height: 70rem;
+    width: 70rem;
+    position: absolute;
+    z-index: -1;
+
+}

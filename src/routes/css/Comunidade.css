@@ -1,0 +1,343 @@
+* {
+
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+
+}
+
+body {
+
+  background-color: #ffffff;
+  overflow-x: hidden;
+
+}
+
+#root {
+
+  --roxo: #5829FA;
+  --azulEscuro: #02004D;
+  --azulClaro: #007AFF;
+  --laranja: #FF8A00;
+
+}
+
+.header-container-comunidade {
+
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 1rem;
+
+}
+
+.header-container-comunidade .img-logo {
+
+  width: 4rem;
+  cursor: pointer;
+
+  &:hover{
+
+    color: white;
+    filter: drop-shadow(2px 1px 5px #FF8A00);
+    transition: 1s;
+
+  }
+
+}
+
+.header-container-comunidade ul {
+
+  color: white;
+  flex-direction: row;
+
+}
+
+.header-container-comunidade .nav-items {
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+
+}
+
+.header-container-comunidade .nav-items hr {
+
+  height: .8rem;
+
+}
+
+.header-container-comunidade .nav-items a {
+
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+
+  &:hover{
+
+    color: #FF8A00;
+    filter: drop-shadow(2px 1px 5px #FF8A00);
+    transition: 1s;
+
+  }
+
+}
+
+.header-container-comunidade .side-right {
+
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+
+}
+
+.header-container-comunidade .side-right .btn-logar {
+
+  height: 2rem;
+  width: 6rem;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 300;
+
+  &:hover{
+
+    color: var(--laranja);
+    background-color: white;
+    transition: 1s;
+
+  }
+
+}
+
+.header-container-comunidade .side-right .icon-perfil{
+
+  height: 2.5rem;
+  cursor: pointer;
+
+  &:hover{
+
+    filter: drop-shadow(2px 1px 5px #FF8A00);
+
+  }
+
+}
+
+/* FILTRO */
+
+.container-filtro .inicio{
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 8rem;
+
+}
+
+.container-filtro .caixa-1{
+
+  width: 80vw;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.container-filtro h1{
+
+  color: white;
+  font-size: 3.5rem;
+  font-weight: 900;
+
+}
+
+.container-filtro .caixa-1 .filtrar-comunidades{
+
+  height: 3rem;
+  width: 7rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 10px;
+  color: white;
+  margin-top: 3rem;
+
+  &:hover{
+
+    color: var(--laranja);
+    background-color: white;
+    transition: 1s;
+
+  }
+
+}
+
+.container-filtro .caixa-1 .buscar{
+
+  height: 3rem;
+  width: 25rem;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 3rem;
+
+}
+
+.container-filtro #filtro{
+
+  display: flex;
+  justify-content: space-around;
+  width: 76vw;
+  background-color: var(--roxo);
+  padding: 2rem;
+  margin-top: 3rem;
+  border-radius: 20px;
+  display: none;
+
+}
+
+.container-filtro .form-check {
+
+  display: flex;
+  flex-direction: column;
+  color: white;
+  margin-top: 1rem;
+
+}
+
+.container-filtro #filtro .item{
+
+  display: flex;
+  gap: 1rem;
+
+}
+
+
+.article-comunidade{
+
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem;
+
+}
+
+.article-comunidade h2{
+
+  color: white;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  margin-left: 3rem;
+
+}
+
+.article-comunidade .cards-comunidade{
+
+  display: flex;
+  object-fit: cover;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 3rem;
+  margin-left: 3rem;
+
+}
+
+.article-comunidade .cards-comunidade .seta-slides{
+
+  width: 4rem;
+  position: absolute;
+  display: flex;
+  right: 25px;
+  cursor: pointer;
+
+}
+
+.article-comunidade .linha{
+
+  width: 100vw;
+  margin-bottom: 4rem;
+  margin-left: 1rem;
+
+}
+
+footer {
+
+  height: 60vh;
+  width: 100vw;
+  background-color: black;
+
+}
+
+.logo-footer{
+
+  width: 25rem;
+
+}
+
+.div-footer {
+
+  width: 100vw;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 4rem;
+
+}
+
+.nav-list-footer{
+
+  width: 50rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+.nav-list-footer a{
+
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  
+  &:hover {
+
+    transform: scale(1.05);
+    transition: .6s;
+
+  }
+
+}
+
+.contatos{
+
+  margin-top: 7rem;
+
+}
+
+.contatos h4,h3{
+
+  color: white;
+
+}
+
+.contatos .telefone, .email, .endereco{
+
+  display: flex;
+  gap: 1rem;
+  margin-left: 14rem;
+  margin-bottom: 2rem;
+
+}
+
+.rede-social{
+
+  display: flex;
+  gap: 1rem;
+  justify-content: right;
+  padding-right: 15rem;
+  margin-bottom: 5rem;
+
+}

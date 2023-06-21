@@ -1,0 +1,434 @@
+* {
+
+  padding: 0;
+  margin: 0;
+
+}
+
+body {
+
+  background-color: #ffffff;
+  overflow-x: hidden;
+
+}
+
+.main{
+
+  background-color: #ffffff;
+
+}
+
+#root {
+
+  --roxo: #5829FA;
+  --azulEscuro: #02004D;
+  --azulClaro: #007AFF;
+  --laranja: #FF8A00;
+
+}
+
+.header-container-faq {
+
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 1rem;
+
+}
+
+.header-container-faq .img-logo {
+
+  width: 4rem;
+  cursor: pointer;
+
+  &:hover{
+
+    color: white;
+    filter: drop-shadow(2px 1px 5px #FF8A00);
+    transition: 1s;
+
+  }
+
+}
+
+.header-container-faq ul {
+
+  color: rgb(0, 0, 0);
+  flex-direction: row;
+
+}
+
+.header-container-faq .nav-items {
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+
+}
+
+.header-container-faq .nav-items hr {
+
+  height: .8rem;
+
+}
+
+.header-container-faq .nav-items a {
+
+  font-size: 1.5rem;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+
+  &:hover{
+
+    color: #FF8A00;
+    filter: drop-shadow(2px 1px 5px #FF8A00);
+    transition: 1s;
+
+  }
+
+}
+
+.header-container-faq .side-right {
+
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+
+}
+
+.header-container-faq .side-right .btn-logar {
+
+  height: 2rem;
+  width: 6rem;
+  background-color: transparent;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 300;
+
+  &:hover{
+
+    color: var(--laranja);
+    background-color: white;
+    transition: 1s;
+
+  }
+
+}
+
+.header-container-faq .side-right .icon-perfil{
+
+  height: 2.5rem;
+  cursor: pointer;
+
+  &:hover{
+
+    filter: drop-shadow(2px 1px 5px #FF8A00);
+
+  }
+
+}
+
+
+
+#perguntas li {
+
+  font-size: 3rem;
+  color: var(--laranja);
+  padding-top: 10rem;
+  padding-bottom: 3rem;
+  margin-left: 5rem;
+
+}
+
+#perguntas .roleta {
+
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+#perguntas .roleta img {
+
+  width: 90vw;
+
+}
+
+#respostas .titulo-pergunta {
+
+  background-color: var(--roxo);
+  width: 70vw;
+  height: 8rem;
+  border-radius: 50px 50px 0px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 14rem;
+  margin-top: 4rem;
+  padding: 2rem;
+
+}
+
+#respostas .titulo-pergunta p {
+
+  font-size: 2rem;
+  color: white;
+  font-weight: bold;
+
+}
+
+#respostas .resposta-pergunta {
+
+  width: 60vw;
+  height: 20rem;
+  background-color: #28126B;
+  border-radius: 50px 50px 50px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+  margin-top: 4rem;
+  margin-bottom: 7rem;
+  line-height: 2rem;
+  padding: 2rem;
+
+}
+
+#respostas .resposta-pergunta p {
+
+  width: 70rem;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  color: white;
+
+}
+
+#email {
+
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  background-color: var(--roxo);
+  padding-bottom: 10rem;
+
+}
+
+#email .titulo {
+
+  background-color: white;
+  width: auto;
+  height: 7rem;
+  border-radius: 50px 50px 50px 0px;
+  display: flex;
+  align-items: center;
+  padding-inline: 2rem;
+  margin-top: 5rem;
+  font-size: 1.8rem;
+
+}
+
+#email .caixa-1 {
+
+  display: flex;
+  flex-direction: column;
+  margin-left: 7rem;
+  height: 50rem;
+
+}
+
+#email .caixa-1 h2{
+
+  font-size: 2rem;
+
+}
+
+#email label {
+
+  color: white;
+  font-size: 1.5rem;
+  margin-left: 2rem;
+
+}
+
+#email .caixa-duvida {
+
+  width: 40rem;
+  height: 15rem;
+  background-color: transparent;
+  border: 3px solid white;
+  border-radius: 20px;
+  padding-left: 2rem;
+  padding-top: 2rem;
+
+}
+
+#email .caixa-email {
+
+  width: 42rem;
+  height: 3rem;
+  background-color: transparent;
+  border: 3px solid white;
+  border-radius: 20px;
+
+}
+
+#email .caixa-nome {
+
+  width: 42rem;
+  height: 3rem;
+  background-color: transparent;
+  border: 3px solid white;
+  border-radius: 20px;
+
+}
+
+
+.caixa-nome::-webkit-input-placeholder {
+
+  color: white;
+  font-size: 1.2rem;
+  padding-left: 2rem;
+  padding-top: 0.7rem;
+
+}
+
+.caixa-email::-webkit-input-placeholder {
+
+  color: white;
+  font-size: 1.2rem;
+  padding-left: 2rem;
+  padding-top: 0.7rem;
+
+}
+
+.caixa-duvida::-webkit-input-placeholder {
+
+  color: white;
+  font-size: 1.2rem;
+
+}
+
+#email .campo-1 {
+
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+
+}
+
+#email label {
+
+  font-size: 2rem;
+  margin-bottom: 1rem;
+
+}
+
+#email .campo-2 {
+
+  margin-top: 1.2rem;
+  display: flex;
+  flex-direction: column;
+
+
+}
+
+#email .campo-3 {
+
+  margin-top: 1.2rem;
+  display: flex;
+  flex-direction: column;
+
+
+}
+
+#email .img-email {
+
+  color: wheat;
+  width: 45rem;
+  margin-right: 2rem;
+
+}
+
+footer {
+
+  height: 60vh;
+  width: 100vw;
+  background-color: black;
+
+}
+
+.logo-footer{
+
+  width: 25rem;
+
+}
+
+.div-footer {
+
+  width: 100vw;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 4rem;
+
+}
+
+.nav-list-footer{
+
+  width: 50rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+.nav-list-footer a{
+
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  
+  &:hover {
+
+    transform: scale(1.05);
+    transition: .6s;
+
+  }
+
+}
+
+.contatos{
+
+  margin-top: 7rem;
+
+}
+
+.contatos h4,h3{
+
+  color: white;
+
+}
+
+.contatos .telefone, .email, .endereco{
+
+  display: flex;
+  gap: 1rem;
+  margin-left: 14rem;
+  margin-bottom: 2rem;
+
+}
+
+.rede-social{
+
+  display: flex;
+  gap: 1rem;
+  justify-content: right;
+  padding-right: 15rem;
+  margin-bottom: 5rem;
+
+}

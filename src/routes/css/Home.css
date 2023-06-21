@@ -1,0 +1,679 @@
+* {
+
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+
+}
+
+body {
+
+  overflow-x: hidden;
+
+}
+
+#root {
+
+  --roxo: #5829FA;
+  --azulEscuro: #02004D;
+  --azulClaro: #007AFF;
+  --laranja: #FF8A00;
+
+}
+
+#main-home {
+
+  background-color: white;
+
+}
+
+main {
+
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.header-container-home {
+
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 1rem;
+
+}
+
+.header-container-home .img-logo {
+
+  width: 4rem;
+  cursor: pointer;
+
+  &:hover {
+
+    transform: scale(1.05);
+    transition: .6s;
+
+  }
+
+}
+
+.header-container-home .nav-items {
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+
+}
+
+.header-container-home .nav-items hr {
+
+  height: .8rem;
+
+}
+
+.header-container-home .nav-items a {
+
+  font-size: 1.5rem;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+
+  &:hover {
+
+    transform: scale(1.05);
+    transition: .6s;
+
+  }
+
+}
+
+.header-container-home .side-right {
+
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+
+}
+
+.header-container-home .side-right .btn-logar {
+
+  height: 2rem;
+  width: 6rem;
+  background-color: transparent;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 300;
+
+  &:hover {
+
+    transform: scale(1.25);
+    transition: 1s;
+
+  }
+
+}
+
+.header-container-home .side-right .icon-perfil {
+
+  height: 2.5rem;
+  cursor: pointer;
+
+  &:hover {
+
+    transform: scale(1.05);
+    transition: .6s;
+
+  }
+
+}
+
+.main-content {
+
+  margin-top: 10rem;
+  position: relative;
+
+}
+
+.main-content .imagem-principal {
+
+  height: 45rem;
+
+}
+
+.main-content .titulo-text {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  text-align: center;
+  color: var(--laranja);
+  top: -13%;
+
+}
+
+.main-content .titulo-text h1 {
+
+  font-size: 5rem;
+
+}
+
+
+
+.main-content .saiba-mais {
+
+  height: 5rem;
+  width: 12rem;
+  background-color: var(--laranja);
+  border-radius: 20px;
+  border: none;
+  color: white;
+  font-size: 1.8rem;
+  position: absolute;
+  top: 45%;
+  right: 12%;
+  cursor: pointer;
+
+  &:hover {
+
+    transform: scale(1.05);
+    transition: .6s;
+    filter: drop-shadow(5px 4px #4444dd);
+
+  }
+
+}
+
+.topicos {
+
+  height: 50rem;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+
+}
+
+.topicos h3 {
+
+  font-size: 2.5rem;
+  margin-top: 40rem;
+  color: var(--laranja);
+
+}
+
+.topicos .img .direita-baixo {
+
+  position: absolute;
+  right: 0%;
+  bottom: -9rem;
+
+}
+
+.topicos .img .esquerda-cima {
+
+  position: absolute;
+  left: 4%;
+  top: 3rem;
+
+}
+
+.topicos .img .planeta-01 {
+
+  position: absolute;
+  top: 10rem;
+  left: 15%;
+  cursor: pointer;
+
+  &:hover {
+
+    transform: scale(1.25);
+    transition: 1s;
+
+  }
+
+}
+
+.topicos .img .planeta-02 {
+
+  position: absolute;
+  top: 10rem;
+  left: 45%;
+  cursor: pointer;
+
+  &:hover {
+
+    transform: scale(1.25);
+    transition: 1s;
+
+  }
+
+}
+
+.topicos .img .planeta-03 {
+
+  position: absolute;
+  top: 10rem;
+  left: 75%;
+  cursor: pointer;
+
+  &:hover {
+
+    transform: scale(1.25);
+    transition: 1s;
+
+  }
+
+}
+
+.topicos .img .planeta-04 {
+
+  position: absolute;
+  top: 25rem;
+  left: 75%;
+  cursor: pointer;
+
+  &:hover {
+
+    transform: scale(1.25);
+    transition: 1s;
+
+  }
+
+}
+
+.topicos .img .planeta-05 {
+
+  position: absolute;
+  top: 25rem;
+  left: 45%;
+  cursor: pointer;
+
+  &:hover {
+
+    transform: scale(1.25);
+    transition: 1s;
+
+  }
+
+}
+
+.topicos .img .planeta-06 {
+
+  position: absolute;
+  top: 25rem;
+  left: 15%;
+  cursor: pointer;
+
+  &:hover {
+
+    transform: scale(1.25);
+    transition: 1s;
+
+  }
+
+}
+
+
+
+.info {
+
+  height: 200vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-evenly;
+  background-image: linear-gradient(#07004D, #5C4DEB);
+
+}
+
+.info-content-esquerda {
+
+  width: 35rem;
+  height: 50rem;
+  border-radius: 250px 250px 250px 0px;
+  background-color: #4F2DF6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: 37rem;
+
+}
+
+.info-txt {
+
+  width: 70%;
+
+}
+
+.astronauta-esquerda {
+
+  position: absolute;
+  height: 50rem;
+  top: -35rem;
+  left: 12rem;
+  display: flex;
+
+}
+
+.info-txt h3 {
+
+  color: var(--laranja);
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+
+}
+
+.info-txt p {
+
+  font-size: 1.2rem;
+  color: white;
+  text-align: justify;
+  margin-bottom: 2rem;
+
+}
+
+.info-content-esquerda .info-icones {
+
+  display: flex;
+  gap: 2rem;
+
+}
+
+.info-content-esquerda .info-icones .info-01,
+.info-03 {
+
+  height: 12rem;
+  width: 10rem;
+  background-color: #5838F6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 15px;
+  cursor: pointer;
+
+}
+
+.info-content-esquerda .info-icones .info-02 {
+
+  height: 12rem;
+  width: 10rem;
+  background-color: var(--azulEscuro);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 15px;
+  cursor: pointer;
+
+}
+
+.info-content-esquerda .info-icones img {
+
+  height: 6rem;
+  box-shadow: 1px #707070;
+
+}
+
+.info-content-esquerda .info-icones h6 {
+
+  font-size: 1.4rem;
+  color: white;
+  text-align: center;
+  margin-top: 1rem;
+
+}
+
+.info-content-direita {
+
+  width: 35rem;
+  height: 50rem;
+  border-radius: 250px 250px 0px 250px;
+  background-color: #4F2DF6;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  margin-top: 5rem;
+
+}
+
+.astronauta-direita {
+
+  position: absolute;
+  height: 50rem;
+  display: flex;
+  bottom: -35rem;
+
+}
+
+
+.review {
+
+  height: 200vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+
+}
+
+.review .review-content {
+
+  width: 80%;
+  height: 30rem;
+  background-color: var(--roxo);
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10rem;
+  position: relative;
+  z-index: 1;
+
+}
+
+.review .review-content .seta-slider {
+
+  position: absolute;
+  right: 2rem;
+
+}
+
+.review .sol {
+
+  position: absolute;
+  top: -5rem;
+  right: 1.5rem;
+
+}
+
+.review .retangulo-azul {
+
+  width: 18rem;
+  position: absolute;
+  top: -3rem;
+  left: 2rem;
+
+}
+
+.review .anel-azul {
+
+  position: absolute;
+  top: 32.5rem;
+  right: .5rem;
+  z-index: 1;
+
+}
+
+.review .review-content h2 {
+
+  font-size: 2.2rem;
+  color: var(--laranja);
+
+}
+
+.review .review-content .reviews-usu {
+
+  display: flex;
+  gap: 10rem;
+
+}
+
+.review .review-content .usuario-01 {
+
+  height: 20rem;
+  width: 15rem;
+  background-color: white;
+  margin-top: 2rem;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+
+    transform: scale(1.2);
+    transition: .6s;
+
+  }
+
+}
+
+.review .review-content .usuario-01 .icon-usuario {
+
+  width: 6rem;
+
+}
+
+.review .review-content .usuario-01 .avaliacao {
+
+  width: 6rem;
+  margin-top: .7rem;
+  margin-bottom: .7rem;
+
+}
+
+.review .review-content .usuario-01 .review-txt {
+
+  width: 70%;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.review .review-content .usuario-01 .review-txt h5 {
+
+  font-size: 1.1rem;
+  color: var(--laranja);
+  margin-bottom: .5rem;
+
+}
+
+.review .img-review {
+
+  width: 80vw;
+  position: absolute;
+  bottom: -11rem;
+
+}
+
+
+
+footer {
+
+  height: 60vh;
+  width: 100vw;
+  background-color: black;
+
+}
+
+.logo-footer{
+
+  width: 25rem;
+
+}
+
+.div-footer {
+
+  width: 100vw;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 4rem;
+
+}
+
+.nav-list-footer{
+
+  width: 50rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+.nav-list-footer a{
+
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  
+  &:hover {
+
+    transform: scale(1.05);
+    transition: .6s;
+
+  }
+
+}
+
+.contatos{
+
+  margin-top: 7rem;
+
+}
+
+.contatos h4,h3{
+
+  color: white;
+
+}
+
+.contatos .telefone, .email, .endereco{
+
+  display: flex;
+  gap: 1rem;
+  margin-left: 14rem;
+  margin-bottom: 2rem;
+
+}
+
+.rede-social{
+
+  display: flex;
+  gap: 1rem;
+  justify-content: right;
+  padding-right: 15rem;
+  margin-bottom: 5rem;
+
+}

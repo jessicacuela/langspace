@@ -1,0 +1,268 @@
+* {
+
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+
+}
+
+body {
+
+  background-color: #270544;
+
+}
+
+.main-sobre{
+
+  background-color: white;
+
+}
+
+#root {
+
+  --roxo: #5829FA;
+  --azulEscuro: #02004D;
+  --azulClaro: #007AFF;
+  --laranja: #FF8A00;
+
+}
+
+.header-container-sobre {
+
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 1rem;
+
+}
+
+.header-container-sobre .img-logo {
+
+  width: 4rem;
+  cursor: pointer;
+
+  &:hover{
+
+    color: white;
+    filter: drop-shadow(2px 1px 5px #FF8A00);
+    transition: 1s;
+
+  }
+
+}
+
+.header-container-sobre ul {
+
+  color: white;
+  flex-direction: row;
+
+}
+
+.header-container-sobre .nav-items {
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+
+}
+
+.header-container-sobre .nav-items hr {
+
+  height: .8rem;
+
+}
+
+.header-container-sobre .nav-items a {
+
+  font-size: 1.5rem;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+
+  &:hover{
+
+    color: #FF8A00;
+    filter: drop-shadow(2px 1px 5px #FF8A00);
+    transition: 1s;
+
+  }
+
+}
+
+.header-container-sobre .side-right {
+
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+
+}
+
+.header-container-sobre .side-right .btn-logar {
+
+  height: 2rem;
+  width: 6rem;
+  background-color: transparent;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 300;
+
+  &:hover{
+
+    color: var(--laranja);
+    background-color: white;
+    transition: 1s;
+
+  }
+
+}
+
+.header-container-sobre .side-right .icon-perfil{
+
+  height: 2.5rem;
+  cursor: pointer;
+
+  &:hover{
+
+    filter: drop-shadow(2px 1px 5px #FF8A00);
+
+  }
+
+}
+
+
+
+.content {
+
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10rem;
+
+}
+
+.content h1 {
+
+  color: #FF8A00;
+  font-size: 5rem;
+  margin-bottom: 7rem;
+
+}
+
+.content p {
+
+  font-size: 2rem;
+  text-align: justify;
+  line-height: 3rem;
+
+}
+
+.btn-desenvolvedores{
+
+  height: 4rem;
+  width: 40rem;
+  cursor: pointer;
+  background-color: var(--laranja);
+  border: none;
+  border-radius: 15px;
+  font-size: 1.8rem;
+  color: white;
+  margin-bottom: 15rem;
+
+  &:hover{
+
+    filter: drop-shadow(2px 1px 5px #FF8A00);
+
+  }
+
+}
+
+.img-sobre{
+
+  height: 35rem;
+  margin-bottom: 15rem;
+
+}
+
+footer {
+
+  height: 60vh;
+  width: 100vw;
+  background-color: black;
+
+}
+
+.logo-footer{
+
+  width: 25rem;
+
+}
+
+.div-footer {
+
+  width: 100vw;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 4rem;
+
+}
+
+.nav-list-footer{
+
+  width: 50rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+.nav-list-footer a{
+
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  
+  &:hover {
+
+    transform: scale(1.05);
+    transition: .6s;
+
+  }
+
+}
+
+.contatos{
+
+  margin-top: 7rem;
+
+}
+
+.contatos h4,h3{
+
+  color: white;
+
+}
+
+.contatos .telefone, .email, .endereco{
+
+  display: flex;
+  gap: 1rem;
+  margin-left: 14rem;
+  margin-bottom: 2rem;
+
+}
+
+.rede-social{
+
+  display: flex;
+  gap: 1rem;
+  justify-content: right;
+  padding-right: 15rem;
+  margin-bottom: 5rem;
+
+}
